@@ -1,4 +1,4 @@
-## Canada provincial and occupational employment trend dash board
+# Canada provincial and occupational employment trend dash board
 
 This is a class project for the CS736 Information Visualization master's course at the University of Regina. It manipulates a ten-year category (occupational) and provincial trend in Canadian employment history.
 
