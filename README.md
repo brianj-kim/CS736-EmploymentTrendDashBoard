@@ -2,7 +2,7 @@
 
 This is a class project for the CS736 Information Visualization master's course at the University of Regina. It manipulates a ten-year category (occupational) and provincial trend in Canadian employment history.
 
-## Rational
+## Project Rationales
 
 - **Customer**: Career Development Advisors in universities and high schools
 - **Problem(s) to solve**: Customers might provide their students with guidance that is supported by rational and practical career options
