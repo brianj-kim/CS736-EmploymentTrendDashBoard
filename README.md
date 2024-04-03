@@ -15,9 +15,9 @@ This is a class project for the CS736 Information Visualization master's course 
 
 ## Data Reference
 
-Statistics Canada. [Table 14-10-0431-01  Employment by occupation, economic regions, three-month moving average, unadjusted for seasonality](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1410043101)
+Statistics Canada. [Statistics Canada. Table 14-10-0431-01  Employment by occupation, economic regions, three-month moving average, unadjusted for seasonality](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1410043101)
 
-DOI: [https://doi.org/10.25318/1410043101-eng]( https://doi.org/10.25318/1410043101-eng)
+DOI: [https://doi.org/10.25318/1410043101-eng](https://doi.org/10.25318/1410043101-eng)
 
 ## Getting Started
 
