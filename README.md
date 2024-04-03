@@ -1,6 +1,6 @@
 # Employment Trend in Canada (provincial, occupational, and montly)
 
-This is a class project for the CS736 Information Visualization master's course at the University of Regina. In order to implement a dash board, it manipulates a ten-year category (occupational) and provincial trend in Canadian employment history.
+This is a class project for the CS736 Information Visualization master's course at the University of Regina (2024 Winter Semester). In order to implement a dash board, it manipulates a ten-year category (occupational) and provincial trend in Canadian employment history.
 
 ## Project Rationales
 
