@@ -1,10 +1,15 @@
-import Image from "next/image";
-import Dashboard from "./pages/dashboard";
+import React, { useEffect } from 'react';
+import ProvincesComponent from './components/Provinces';
 
-export default function Home() {
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <Dashboard />
-    </main>
-  );
-}
+const HomePage: React.FC = () => {
+    
+    return (
+        <div className="max-w-[80%] mx-auto my-6">
+            <div className="text-xl font-semibold mb-4 text-center py-4">Top Canadian Employment Industries by Province (10 years)</div>
+            <ProvincesComponent />
+            {/* <IndustriesComponent /> */}
+        </div>
+    );
+};
+
+export default HomePage;
