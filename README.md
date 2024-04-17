@@ -21,7 +21,11 @@ DOI: [https://doi.org/10.25318/1410043101-eng](https://doi.org/10.25318/14100431
 
 ## Getting Started
 
-First, run the development server:
+First, download the raw data and preprocess the data with python code (Documents/data-wrangle.py) that generates 2 json files. Upload them using mongoimport onto MongoDB Atlas. 
+
+Secondly, setup mongo uri for the application in env.local file
+
+Then run the development server:
 
 ```bash
 npm run dev
