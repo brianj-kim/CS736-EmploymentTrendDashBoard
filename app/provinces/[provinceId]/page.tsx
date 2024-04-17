@@ -25,7 +25,7 @@ export type ChartComponentProps = {
 }
 
 export type ChartDataPoint = {
-    x: Date;  // Month-Year string
+    x: Date | string;  // Month-Year string
     y: number;  // Value
 }
 
@@ -33,7 +33,7 @@ export type DataSet = {
     label: string;
     data: ChartDataPoint[];
     borderColor: string;
-    backgroundColor: string;
+    backgroundColor?: string;
     fill: boolean;
 }
 
@@ -70,8 +70,9 @@ export default function ProvincePage() {
     }, []);
 
     useEffect(() => {
+        const provinceId = params!.provinceId;
         if (provinces.length > 0 && params!.provinceId) {
-            const foundProvince = findProvinceById(params!.provinceId, provinces);
+            const foundProvince = findProvinceById(provinceId, provinces);
             setProvince(foundProvince);
 
             if (foundProvince) {
@@ -79,7 +80,7 @@ export default function ProvincePage() {
                 setFilteredIndustries(topIndustries);
             }
         }
-    }, [provinces, params!.provinceId]);
+    }, [provinces, params, industries]);
 
     useEffect(() => {
         const fetchData = async () => {
@@ -104,7 +105,7 @@ export default function ProvincePage() {
         if (occupations.length > 0) {
             fetchData();
         }
-    }, [province, industries]);
+    }, [province, industries, occupations]);
 
     useEffect(() => {
         const newGroupedData = employment.reduce<GroupedData>((acc, item) => {
@@ -136,8 +137,7 @@ export default function ProvincePage() {
 
     
     let chartData = groupedData && prepareChartData(groupedData);
-
-    console.log(chartData);
+    
 
     return (
         <div className="max-w-full">
